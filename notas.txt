@@ -1,0 +1,17 @@
+# Iniciar repositorio local
+git init
+
+# Assoociar branch local (head) com um remoto
+git remote add origin https://github.com/luiscwb/styleme.git
+
+# Realizar push de um novo repo local no remoto
+git push --set-upstream origim master
+
+#Listar branches
+git branch -a
+
+# Commit de arquivos
+git commit -m "nova linha desde o secundario"
+
+#Realizar pull com merge especificando mensagem
+git pull --no-edit  &&  git commit --amend -m "mensagem do merge"
